@@ -1,0 +1,8 @@
+<div class="name-container">
+    <label [for]="fieldName">{{label}}:</label>
+    <input type="text" name="name" [id]="fieldName" [value]="value" (input)="onChange($event)" (blur)="touched" [disabled]="isDisabled">
+</div>
+<!-- <div class="password-container">
+    <label [for]="fieldName">{{label}}:</label>
+    <input type="password" name="password" id="password" [value]="value" (input)="onChange($event)" (blur)="touched" [disabled]="isDisabled">
+</div> -->

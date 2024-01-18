@@ -1,0 +1,13 @@
+<h1>Login-Form</h1>
+<form action="" [formGroup]="loginForm" (ngSubmit)="submitLoginForm()">
+    <app-input [receivedForm]="loginForm" fieldName="name" label="Username" formControlName="name"></app-input>
+    <app-input [receivedForm]="loginForm" fieldName="password" label="Password" formControlName="password"></app-input>
+    <button>Submit</button>
+    <!-- <p>Username is : {{usr}}</p> -->
+    <!-- <p>Password is : {{pwd}}</p> -->
+</form>
+<button (click)="displayData()">Display user data</button>
+<div *ngIf="showUserData" class="display-user-data">
+    <p>Username is :</p>
+    <p>Password is :</p>
+</div>
